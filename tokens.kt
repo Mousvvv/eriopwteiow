@@ -10,97 +10,97 @@ import androidx.compose.ui.text.font.FontWeight
 object DesignTokens {
 
     // Colors
-
-
-    // LightColors
-    val _colors_primary_Light = Color(0xFF4F46E5)
-    val _colors_primary_pressedLight = Color(0xFF4338CA)
-    val _colors_primary_activeLight = Color(0xFF3730A3)
-    val _colors_primary_disabledLight = Color(0xFFC7D2FE)
-    val _colors_background_Light = Color(0xFFFFFFFF)
-    val _colors_background_surfaceLight = Color(0xFFF9FAFB)
-    val _colors_text_primaryLight = Color(0xFF111827)
-    val _colors_text_secondaryLight = Color(0xFF6B7280)
-    val _colors_text_disabledLight = Color(0xFF9CA3AF)
-    val _colors_status_errorLight = Color(0xFFDC2626)
-    val _colors_status_successLight = Color(0xFF16A34A)
-    val _colors_status_warningLight = Color(0xFFD97706)
-    val _colors_status_infoLight = Color(0xFF0EA5E9)
-
+    val color_primary_ = Color(0xFF28C76F)
+    val color_primary_pressed = Color(0xFF24B364)
+    val color_primary_disabled = Color(0xFF1E7A50)
+    val color_secondary_ = Color(0xFF7367F0)
+    val color_secondary_pressed = Color(0xFF5E54D1)
+    val color_secondary_disabled = Color(0xFF3D2B9B)
+    val color_background_ = Color(0xFF121212)
+    val color_background_surface = Color(0xFF1E1E1E)
+    val color_background_card = Color(0xFF1A1A1A)
+    val color_text_main = Color(0xFFFFFFFF)
+    val color_text_secondary = Color(0xFFB0B0B0)
+    val color_text_placeholder = Color(0xFF666666)
+    val color_text_disabled = Color(0xFF444444)
+    val color_error_ = Color(0xFFFF6F61)
+    val color_error_on = Color(0xFFFFFFFF)
+    val color_success_ = Color(0xFF28C76F)
+    val color_success_on = Color(0xFFFFFFFF)
+    val color_warning_ = Color(0xFFFF9F43)
+    val color_warning_on = Color(0xFF000000)
     // Typography
     // Font Families
-    val light_typography_fontFamilies_main = "Inter"
-    val light_typography_fontFamilies_display = "Poppins"
+    val typography_fontFamily_primary = "Inter"
+    val typography_fontFamily_secondary = "Roboto"
 
     // Font Weights
-    val light_typography_fontWeights_regular = FontWeight.Normal
-    val light_typography_fontWeights_medium = FontWeight.Medium
-    val light_typography_fontWeights_bold = FontWeight.Bold
+    val typography_fontWeight_regular = FontWeight.Normal
+    val typography_fontWeight_medium = FontWeight.Medium
+    val typography_fontWeight_semibold = FontWeight.SemiBold
+    val typography_fontWeight_bold = FontWeight.Bold
 
     // Font Sizes
-    val light_typography_fontSizes_sm = 14.sp
-    val light_typography_fontSizes_md = 16.sp
-    val light_typography_fontSizes_lg = 20.sp
-    val light_typography_fontSizes_xl = 24.sp
+    val typography_fontSize_12 = 12.sp
+    val typography_fontSize_14 = 14.sp
+    val typography_fontSize_16 = 16.sp
+    val typography_fontSize_18 = 18.sp
+    val typography_fontSize_20 = 20.sp
+    val typography_fontSize_24 = 24.sp
 
     // Line Heights
-    val light_typography_lineHeights_tight = 1.25f
-    val light_typography_lineHeights_normal = 1.5f
-    val light_typography_lineHeights_relaxed = 1.625f
+    val typography_lineHeight_small = 16f
+    val typography_lineHeight_medium = 20f
+    val typography_lineHeight_large = 24f
+
+    // Letter Spacings
+    val typography_letterSpacing_tight = -0.02.em
+    val typography_letterSpacing_normal = 0.em
+    val typography_letterSpacing_wide = 0.02.em
 
     // Spacing
-    val light_spacing_sm = 8.dp
-    val light_spacing_md = 16.dp
-    val light_spacing_lg = 24.dp
-    val light_spacing_xl = 32.dp
+    val size_spacing_xs = 4.dp
+    val size_spacing_sm = 8.dp
+    val size_spacing_md = 16.dp
+    val size_spacing_lg = 24.dp
+    val size_spacing_xl = 32.dp
 
     // Sizing
-    val light_sizing_buttonHeight = 44.dp
-    val light_sizing_inputHeight = 48.dp
-    val light_sizing_cardHeight = 120.dp
-    val light_sizing_sidebarWidth = 280.dp
-    val light_sizing_modalWidth = 400.dp
-
-    // Border Radius
-    val light_borderRadius_sm = 4.dp
-    val light_borderRadius_md = 8.dp
-    val light_borderRadius_lg = 16.dp
-    val light_borderRadius_full = 9999.dp
-
-    // Borders
-    val light_border_thin = 1.dp
-    val light_border_medium = 2.dp
-    val light_border_thick = 2.dp
+    val size_borderRadius_sm = 4.dp
+    val size_borderRadius_md = 8.dp
+    val size_borderRadius_lg = 16.dp
+    val size_borderRadius_round = 9999.dp
 
     // Shadows
     // Small Shadows
-    val light_shadows_sm = Shadow(
-        color = Color(0px).copy(alpha = 0.25f),
+    val shadow_sm = Shadow(
+        color = Color(rgba(0,0,0,0.1)).copy(alpha = 0.25f),
         offset = DpOffset(0.dp, 1.dp),
-        blurRadius = 3.dp
+        blurRadius = 2.dp
     )
 
-    val light_shadows_md = Shadow(
-        color = Color(-1px).copy(alpha = 0.25f),
+    // Medium Shadows
+    val shadow_md = Shadow(
+        color = Color(rgba(0,0,0,0.15)).copy(alpha = 0.25f),
         offset = DpOffset(0.dp, 4.dp),
         blurRadius = 6.dp
     )
 
+    // Large Shadows
+    val shadow_lg = Shadow(
+        color = Color(rgba(0,0,0,0.2)).copy(alpha = 0.25f),
+        offset = DpOffset(0.dp, 10.dp),
+        blurRadius = 15.dp
+    )
 
-    // Z-Indices
-    val light_zIndex_dropdown = 1000f
-    val light_zIndex_modal = 1050f
-    val light_zIndex_tooltip = 1100f
 
-    // Transitions
-    val light_transitions_fast = 150L
-    val light_transitions_normal = 200L
-    val light_transitions_slow = 300L
+    // Opacities
+    val opacity_disabled = 0.38f
+    val opacity_hover = 0.08f
+    val opacity_focus = 0.12f
 
     // Other Tokens
-    val light_icons_sm = "16"
-    val light_icons_md = "20"
-    val light_icons_lg = "24"
+    val $schema = "https://example.com/dark-mode-tokens.schema.json"
 
 }
 
