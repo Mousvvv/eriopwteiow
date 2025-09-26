@@ -3,83 +3,80 @@
 :root {
 
   /* Colors */
-  --color--colors-primary-light: #4F46E5;
-  --color--colors-primary-pressed-light: #4338CA;
-  --color--colors-primary-active-light: #3730A3;
-  --color--colors-primary-disabled-light: #C7D2FE;
-  --color--colors-background-light: #FFFFFF;
-  --color--colors-background-surface-light: #F9FAFB;
-  --color--colors-text-primary-light: #111827;
-  --color--colors-text-secondary-light: #6B7280;
-  --color--colors-text-disabled-light: #9CA3AF;
-  --color--colors-status-error-light: #DC2626;
-  --color--colors-status-success-light: #16A34A;
-  --color--colors-status-warning-light: #D97706;
-  --color--colors-status-info-light: #0EA5E9;
+  --color-color-primary: #28C76F;
+  --color-color-primary-pressed: #24B364;
+  --color-color-primary-disabled: #1E7A50;
+  --color-color-secondary: #7367F0;
+  --color-color-secondary-pressed: #5E54D1;
+  --color-color-secondary-disabled: #3D2B9B;
+  --color-color-background: #121212;
+  --color-color-background-surface: #1E1E1E;
+  --color-color-background-card: #1A1A1A;
+  --color-color-text-main: #FFFFFF;
+  --color-color-text-secondary: #B0B0B0;
+  --color-color-text-placeholder: #666666;
+  --color-color-text-disabled: #444444;
+  --color-color-error: #FF6F61;
+  --color-color-error-on: #FFFFFF;
+  --color-color-success: #28C76F;
+  --color-color-success-on: #FFFFFF;
+  --color-color-warning: #FF9F43;
+  --color-color-warning-on: #000000;
 
   /* Typography */
   /* FontFamily */
-  --light-typography-fontFamilies-main: Inter;
-  --light-typography-fontFamilies-display: Poppins;
+  --typography-fontFamily-primary: Inter;
+  --typography-fontFamily-secondary: Roboto;
 
   /* FontSize */
-  --light-typography-fontSizes-sm: 14px;
-  --light-typography-fontSizes-md: 16px;
-  --light-typography-fontSizes-lg: 20px;
-  --light-typography-fontSizes-xl: 24px;
+  --typography-fontSize-12: 12px;
+  --typography-fontSize-14: 14px;
+  --typography-fontSize-16: 16px;
+  --typography-fontSize-18: 18px;
+  --typography-fontSize-20: 20px;
+  --typography-fontSize-24: 24px;
 
   /* FontWeight */
-  --light-typography-fontWeights-regular: 400;
-  --light-typography-fontWeights-medium: 500;
-  --light-typography-fontWeights-bold: 700;
+  --typography-fontWeight-regular: 400;
+  --typography-fontWeight-medium: 500;
+  --typography-fontWeight-semibold: 600;
+  --typography-fontWeight-bold: 700;
 
   /* LineHeight */
-  --light-typography-lineHeights-tight: 1.25;
-  --light-typography-lineHeights-normal: 1.5;
-  --light-typography-lineHeights-relaxed: 1.625;
+  --typography-lineHeight-small: 16px;
+  --typography-lineHeight-medium: 20px;
+  --typography-lineHeight-large: 24px;
+
+  /* LetterSpacing */
+  --typography-letterSpacing-tight: -0.02em;
+  --typography-letterSpacing-normal: 0em;
+  --typography-letterSpacing-wide: 0.02em;
 
 
   /* Spacing */
-  --light-spacing-sm: 8px;
-  --light-spacing-md: 16px;
-  --light-spacing-lg: 24px;
-  --light-spacing-xl: 32px;
+  --size-spacing-xs: 4px;
+  --size-spacing-sm: 8px;
+  --size-spacing-md: 16px;
+  --size-spacing-lg: 24px;
+  --size-spacing-xl: 32px;
 
   /* Sizing */
-  --light-sizing-buttonHeight: 44px;
-  --light-sizing-inputHeight: 48px;
-  --light-sizing-cardHeight: 120px;
-  --light-sizing-sidebarWidth: 280px;
-  --light-sizing-modalWidth: 400px;
-
-  /* Border Radius */
-  --light-borderRadius-sm: 4px;
-  --light-borderRadius-md: 8px;
-  --light-borderRadius-lg: 16px;
-  --light-borderRadius-full: 9999px;
-
-  /* Borders */
-  --light-border-thin: 1px;
-  --light-border-medium: 1.5px;
-  --light-border-thick: 2px;
+  --size-borderRadius-sm: 4px;
+  --size-borderRadius-md: 8px;
+  --size-borderRadius-lg: 16px;
+  --size-borderRadius-round: 9999px;
 
   /* Shadows */
-  --light-shadows-sm: 0px 1px 3px 0px #000000;
-  --light-shadows-md: 0px 4px 6px -1px #000000;
+  --shadow-sm: 0px 1px 2px rgba(0,0,0,0.1);
+  --shadow-md: 0px 4px 6px rgba(0,0,0,0.15);
+  --shadow-lg: 0px 10px 15px rgba(0,0,0,0.2);
 
-  /* Z-Indices */
-  --light-zIndex-dropdown: 1000;
-  --light-zIndex-modal: 1050;
-  --light-zIndex-tooltip: 1100;
-
-  /* Transitions */
-  --light-transitions-fast: 150ms;
-  --light-transitions-normal: 200ms;
-  --light-transitions-slow: 300ms;
+  /* Opacities */
+  --opacity-disabled: 0.38;
+  --opacity-hover: 0.08;
+  --opacity-focus: 0.12;
 
   /* Other */
-  --light-icons-sm: 16;
-  --light-icons-md: 20;
-  --light-icons-lg: 24;
+  --$schema: https://example.com/dark-mode-tokens.schema.json;
 }
 
