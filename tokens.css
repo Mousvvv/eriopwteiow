@@ -3,148 +3,83 @@
 :root {
 
   /* Colors */
-  --color-Primary-light: #2563EB; --color-Primary-dark: #3B82F6;
-  --color-PrimaryPressed-light: #1D4ED8; --color-PrimaryPressed-dark: #2563EB;
-  --color-PrimaryActive-light: #1E40AF; --color-PrimaryActive-dark: #1D4ED8;
-  --color-PrimaryDisabled-light: #93C5FD; --color-PrimaryDisabled-dark: #1E3A8A;
-  --color-Secondary-light: #F3F4F6; --color-Secondary-dark: #374151;
-  --color-SecondaryPressed-light: #E5E7EB; --color-SecondaryPressed-dark: #4B5563;
-  --color-BgColor-light: #FFFFFF; --color-BgColor-dark: #0F172A;
-  --color-Surface-light: #F9FAFB; --color-Surface-dark: #1E293B;
-  --color-PrimaryText-light: #111827; --color-PrimaryText-dark: #F8FAFC;
-  --color-SecondaryText-light: #6B7280; --color-SecondaryText-dark: #CBD5E1;
-  --color-TextDisabled-light: #9CA3AF; --color-TextDisabled-dark: #64748B;
-  --color-OnPrimaryText-light: #FFFFFF; --color-OnPrimaryText-dark: #FFFFFF;
-  --color-Card-light: #FFFFFF; --color-Card-dark: #1E293B;
-  --color-Divider-light: #E5E7EB; --color-Divider-dark: #334155;
-  --color-Error-light: #DC2626; --color-Error-dark: #EF4444;
-  --color-Success-light: #16A34A; --color-Success-dark: #22C55E;
-  --color-Warning-light: #D97706; --color-Warning-dark: #F59E0B;
-  --color-Info-light: #0EA5E9; --color-Info-dark: #06B6D4;
+  --color--colors-primary-light: #4F46E5;
+  --color--colors-primary-pressed-light: #4338CA;
+  --color--colors-primary-active-light: #3730A3;
+  --color--colors-primary-disabled-light: #C7D2FE;
+  --color--colors-background-light: #FFFFFF;
+  --color--colors-background-surface-light: #F9FAFB;
+  --color--colors-text-primary-light: #111827;
+  --color--colors-text-secondary-light: #6B7280;
+  --color--colors-text-disabled-light: #9CA3AF;
+  --color--colors-status-error-light: #DC2626;
+  --color--colors-status-success-light: #16A34A;
+  --color--colors-status-warning-light: #D97706;
+  --color--colors-status-info-light: #0EA5E9;
 
   /* Typography */
   /* FontFamily */
-  --MainFont: Inter;
-  --DisplayFont: Poppins;
+  --light-typography-fontFamilies-main: Inter;
+  --light-typography-fontFamilies-display: Poppins;
 
   /* FontSize */
-  --FontSizeXS: 12px;
-  --FontSizeS: 14px;
-  --FontSizeMD: 16px;
-  --FontSizeLG: 18px;
-  --FontSizeXL: 20px;
-  --FontSizeXXL: 24px;
-  --FontSizeXXXL: 32px;
-  --FontSizeDisplay: 48px;
+  --light-typography-fontSizes-sm: 14px;
+  --light-typography-fontSizes-md: 16px;
+  --light-typography-fontSizes-lg: 20px;
+  --light-typography-fontSizes-xl: 24px;
 
   /* FontWeight */
-  --FontWeightLight: 300;
-  --FontWeightRegular: 400;
-  --FontWeightMedium: 500;
-  --FontWeightSemiBold: 600;
-  --FontWeightBold: 700;
+  --light-typography-fontWeights-regular: 400;
+  --light-typography-fontWeights-medium: 500;
+  --light-typography-fontWeights-bold: 700;
 
   /* LineHeight */
-  --LineHeightTight: 1.25;
-  --LineHeightNormal: 1.5;
-  --LineHeightRelaxed: 1.625;
-  --LineHeightLoose: 2;
-
-  /* LetterSpacing */
-  --LetterSpacingTight: -0.025em;
-  --LetterSpacingNormal: 0em;
-  --LetterSpacingWide: 0.025em;
-  --LetterSpacingWider: 0.05em;
+  --light-typography-lineHeights-tight: 1.25;
+  --light-typography-lineHeights-normal: 1.5;
+  --light-typography-lineHeights-relaxed: 1.625;
 
 
   /* Spacing */
-  --SpacingXS: 4px;
-  --SpacingS: 8px;
-  --SpacingMD: 16px;
-  --SpacingLG: 24px;
-  --SpacingXL: 32px;
-  --SpacingXXL: 40px;
-  --SpacingXXXL: 48px;
-  --SpacingXXXXL: 64px;
+  --light-spacing-sm: 8px;
+  --light-spacing-md: 16px;
+  --light-spacing-lg: 24px;
+  --light-spacing-xl: 32px;
 
   /* Sizing */
-  --SizingXS: 24px;
-  --SizingS: 32px;
-  --SizingMD: 40px;
-  --SizingLG: 48px;
-  --SizingXL: 56px;
-  --SizingXXL: 64px;
-  --SizingXXXL: 80px;
-  --HeightButton: 44px;
-  --HeightInput: 48px;
-  --HeightCard: 120px;
-  --WidthSidebar: 280px;
-  --WidthModal: 400px;
-  --WidthContainer: 1200px;
-
-  /* IconSize */
-  --IconSizeXS: 12px;
-  --IconSizeS: 16px;
-  --IconSizeMD: 20px;
-  --IconSizeLG: 24px;
-  --IconSizeXL: 32px;
+  --light-sizing-buttonHeight: 44px;
+  --light-sizing-inputHeight: 48px;
+  --light-sizing-cardHeight: 120px;
+  --light-sizing-sidebarWidth: 280px;
+  --light-sizing-modalWidth: 400px;
 
   /* Border Radius */
-  --BorderRadiusXS: 4px;
-  --BorderRadiusS: 8px;
-  --BorderRadiusMD: 12px;
-  --BorderRadiusLG: 16px;
-  --BorderRadiusXL: 20px;
-  --BorderRadiusXXL: 24px;
-  --BorderRadiusFull: 9999px;
+  --light-borderRadius-sm: 4px;
+  --light-borderRadius-md: 8px;
+  --light-borderRadius-lg: 16px;
+  --light-borderRadius-full: 9999px;
 
   /* Borders */
-  --BorderThin: 1px;
-  --BorderMedium: 1.5px;
-  --BorderThick: 2px;
-  --BorderFocus: 3px;
+  --light-border-thin: 1px;
+  --light-border-medium: 1.5px;
+  --light-border-thick: 2px;
 
   /* Shadows */
-  --BoxShadowS: 0px 1px 3px 0px #000000;
-  --BoxShadowMD: 0px 4px 6px -1px #000000;
-  --BoxShadowLG: 0px 10px 15px -3px #000000;
-
-  /* Opacities */
-  --ShadowOpacity: 0.1;
-  --OverlayOpacity: 0.6;
-  --DisabledOpacity: 0.4;
+  --light-shadows-sm: 0px 1px 3px 0px #000000;
+  --light-shadows-md: 0px 4px 6px -1px #000000;
 
   /* Z-Indices */
-  --ZIndexDropdown: 1000;
-  --ZIndexModal: 1050;
-  --ZIndexTooltip: 1100;
+  --light-zIndex-dropdown: 1000;
+  --light-zIndex-modal: 1050;
+  --light-zIndex-tooltip: 1100;
 
   /* Transitions */
-  --TransitionFast: 150ms;
-  --TransitionNormal: 200ms;
-  --TransitionSlow: 300ms;
+  --light-transitions-fast: 150ms;
+  --light-transitions-normal: 200ms;
+  --light-transitions-slow: 300ms;
+
+  /* Other */
+  --light-icons-sm: 16;
+  --light-icons-md: 20;
+  --light-icons-lg: 24;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-Primary-light: var(--color-Primary-dark);
-    --color-PrimaryPressed-light: var(--color-PrimaryPressed-dark);
-    --color-PrimaryActive-light: var(--color-PrimaryActive-dark);
-    --color-PrimaryDisabled-light: var(--color-PrimaryDisabled-dark);
-    --color-Secondary-light: var(--color-Secondary-dark);
-    --color-SecondaryPressed-light: var(--color-SecondaryPressed-dark);
-    --color-BgColor-light: var(--color-BgColor-dark);
-    --color-Surface-light: var(--color-Surface-dark);
-    --color-PrimaryText-light: var(--color-PrimaryText-dark);
-    --color-SecondaryText-light: var(--color-SecondaryText-dark);
-    --color-TextDisabled-light: var(--color-TextDisabled-dark);
-    --color-OnPrimaryText-light: var(--color-OnPrimaryText-dark);
-    --color-Card-light: var(--color-Card-dark);
-    --color-Divider-light: var(--color-Divider-dark);
-    --color-Error-light: var(--color-Error-dark);
-    --color-Success-light: var(--color-Success-dark);
-    --color-Warning-light: var(--color-Warning-dark);
-    --color-Info-light: var(--color-Info-dark);
-  }
-}
