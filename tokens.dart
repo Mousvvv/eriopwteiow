@@ -26,31 +26,43 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static const Color _colors_primary_Light = Color(0xFF4F46E5);
+  static const Color color_primary_ = Color(0xFF28C76F);
 
-  static const Color _colors_primary_pressedLight = Color(0xFF4338CA);
+  static const Color color_primary_pressed = Color(0xFF24B364);
 
-  static const Color _colors_primary_activeLight = Color(0xFF3730A3);
+  static const Color color_primary_disabled = Color(0xFF1E7A50);
 
-  static const Color _colors_primary_disabledLight = Color(0xFFC7D2FE);
+  static const Color color_secondary_ = Color(0xFF7367F0);
 
-  static const Color _colors_background_Light = Color(0xFFFFFFFF);
+  static const Color color_secondary_pressed = Color(0xFF5E54D1);
 
-  static const Color _colors_background_surfaceLight = Color(0xFFF9FAFB);
+  static const Color color_secondary_disabled = Color(0xFF3D2B9B);
 
-  static const Color _colors_text_primaryLight = Color(0xFF111827);
+  static const Color color_background_ = Color(0xFF121212);
 
-  static const Color _colors_text_secondaryLight = Color(0xFF6B7280);
+  static const Color color_background_surface = Color(0xFF1E1E1E);
 
-  static const Color _colors_text_disabledLight = Color(0xFF9CA3AF);
+  static const Color color_background_card = Color(0xFF1A1A1A);
 
-  static const Color _colors_status_errorLight = Color(0xFFDC2626);
+  static const Color color_text_main = Color(0xFFFFFFFF);
 
-  static const Color _colors_status_successLight = Color(0xFF16A34A);
+  static const Color color_text_secondary = Color(0xFFB0B0B0);
 
-  static const Color _colors_status_warningLight = Color(0xFFD97706);
+  static const Color color_text_placeholder = Color(0xFF666666);
 
-  static const Color _colors_status_infoLight = Color(0xFF0EA5E9);
+  static const Color color_text_disabled = Color(0xFF444444);
+
+  static const Color color_error_ = Color(0xFFFF6F61);
+
+  static const Color color_error_on = Color(0xFFFFFFFF);
+
+  static const Color color_success_ = Color(0xFF28C76F);
+
+  static const Color color_success_on = Color(0xFFFFFFFF);
+
+  static const Color color_warning_ = Color(0xFFFF9F43);
+
+  static const Color color_warning_on = Color(0xFF000000);
 
 }
 
@@ -60,40 +72,59 @@ class AppTypography {
 
   // Font Families
   /// Font family: Inter
-  static const String light_typography_fontFamilies_main = "Inter";
-  /// Font family: Poppins
-  static const String light_typography_fontFamilies_display = "Poppins";
+  static const String typography_fontFamily_primary = "Inter";
+  /// Font family: Roboto
+  static const String typography_fontFamily_secondary = "Roboto";
 
   // Font Weights
   /// Font weight: 400
-  static const FontWeight light_typography_fontWeights_regular = FontWeight.w400;
+  static const FontWeight typography_fontWeight_regular = FontWeight.w400;
   /// Font weight: 500
-  static const FontWeight light_typography_fontWeights_medium = FontWeight.w500;
+  static const FontWeight typography_fontWeight_medium = FontWeight.w500;
+  /// Font weight: 600
+  static const FontWeight typography_fontWeight_semibold = FontWeight.w600;
   /// Font weight: 700
-  static const FontWeight light_typography_fontWeights_bold = FontWeight.w700;
+  static const FontWeight typography_fontWeight_bold = FontWeight.w700;
 
   // Font Sizes
+  /// Font size: 12sp
+  static const double typography_fontSize_12 = 12;
   /// Font size: 14sp
-  static const double light_typography_fontSizes_sm = 14;
+  static const double typography_fontSize_14 = 14;
   /// Font size: 16sp
-  static const double light_typography_fontSizes_md = 16;
+  static const double typography_fontSize_16 = 16;
+  /// Font size: 18sp
+  static const double typography_fontSize_18 = 18;
   /// Font size: 20sp
-  static const double light_typography_fontSizes_lg = 20;
+  static const double typography_fontSize_20 = 20;
   /// Font size: 24sp
-  static const double light_typography_fontSizes_xl = 24;
+  static const double typography_fontSize_24 = 24;
 
   /// Line heights as relative multipliers
   /// Example: 1.5 means line height is 150% of the font size
   // Line Heights
-  /// Line height multiplier: 1.25
-  /// Usage: height: AppTypography.light_typography_lineHeights_tight
-  static const double light_typography_lineHeights_tight = 1.25;
-  /// Line height multiplier: 1.5
-  /// Usage: height: AppTypography.light_typography_lineHeights_normal
-  static const double light_typography_lineHeights_normal = 1.5;
-  /// Line height multiplier: 1.625
-  /// Usage: height: AppTypography.light_typography_lineHeights_relaxed
-  static const double light_typography_lineHeights_relaxed = 1.625;
+  /// Line height multiplier: 16
+  /// Usage: height: AppTypography.typography_lineHeight_small
+  static const double typography_lineHeight_small = 16;
+  /// Line height multiplier: 20
+  /// Usage: height: AppTypography.typography_lineHeight_medium
+  static const double typography_lineHeight_medium = 20;
+  /// Line height multiplier: 24
+  /// Usage: height: AppTypography.typography_lineHeight_large
+  static const double typography_lineHeight_large = 24;
+
+  /// Letter spacing values in EM units
+  /// Values are relative to font size (1em = font size)
+  // Letter Spacings
+  /// Letter spacing: -0.02px (-0.001em)
+  /// Usage: letterSpacing: AppTypography.typography_letterSpacing_tight
+  static const double typography_letterSpacing_tight = -0.001;
+  /// Letter spacing: 0px (0.000em)
+  /// Usage: letterSpacing: AppTypography.typography_letterSpacing_normal
+  static const double typography_letterSpacing_normal = 0.000;
+  /// Letter spacing: 0.02px (0.001em)
+  /// Usage: letterSpacing: AppTypography.typography_letterSpacing_wide
+  static const double typography_letterSpacing_wide = 0.001;
 
   // MARK: - TextStyle Constants
   /// Base text style that adapts to the current theme
@@ -131,8 +162,8 @@ class AppTypography {
   );
 
   /// Default text style using Inter
-  static TextStyle get light_typography_fontFamilies_mainStyle => TextStyle(
-    fontFamily: light_typography_fontFamilies_main,
+  static TextStyle get typography_fontFamily_primaryStyle => TextStyle(
+    fontFamily: typography_fontFamily_primary,
     fontWeight: FontWeight.w400,
     fontSize: 16.0,
     height: 1.5,
@@ -140,9 +171,9 @@ class AppTypography {
     color: Colors.black,
   );
 
-  /// Default text style using Poppins
-  static TextStyle get light_typography_fontFamilies_displayStyle => TextStyle(
-    fontFamily: light_typography_fontFamilies_display,
+  /// Default text style using Roboto
+  static TextStyle get typography_fontFamily_secondaryStyle => TextStyle(
+    fontFamily: typography_fontFamily_secondary,
     fontWeight: FontWeight.w400,
     fontSize: 16.0,
     height: 1.5,
@@ -156,40 +187,21 @@ class AppTypography {
 class AppSpacing {
   AppSpacing._();
 
-  static const double light_spacing_sm = 8;
-  static const double light_spacing_md = 16;
-  static const double light_spacing_lg = 24;
-  static const double light_spacing_xl = 32;
+  static const double size_spacing_xs = 4;
+  static const double size_spacing_sm = 8;
+  static const double size_spacing_md = 16;
+  static const double size_spacing_lg = 24;
+  static const double size_spacing_xl = 32;
 }
 
 // MARK: - Sizing
 class AppSizing {
   AppSizing._();
 
-  static const double light_sizing_buttonHeight = 44;
-  static const double light_sizing_inputHeight = 48;
-  static const double light_sizing_cardHeight = 120;
-  static const double light_sizing_sidebarWidth = 280;
-  static const double light_sizing_modalWidth = 400;
-}
-
-// MARK: - Border Radius
-class AppBorderRadius {
-  AppBorderRadius._();
-
-  static const double light_borderRadius_sm = 4;
-  static const double light_borderRadius_md = 8;
-  static const double light_borderRadius_lg = 16;
-  static const double light_borderRadius_full = 9999;
-}
-
-// MARK: - Borders
-class AppBorders {
-  AppBorders._();
-
-  static const double light_border_thin = 1;
-  static const double light_border_medium = 1.5;
-  static const double light_border_thick = 2;
+  static const double size_borderRadius_sm = 4;
+  static const double size_borderRadius_md = 8;
+  static const double size_borderRadius_lg = 16;
+  static const double size_borderRadius_round = 9999;
 }
 
 // MARK: - Shadows
@@ -198,56 +210,49 @@ class AppShadows {
 
   // Small Shadows
   /// Creates a small shadow effect
-  /// - Color: 0px with opacity 0.25
+  /// - Color: rgba(0,0,0,0.1) with opacity 0.25
   /// - Offset: (0px, 1px)
-  /// - Blur: 3px
+  /// - Blur: 2px
   /// - Spread: 0px
-  static BoxShadow get light_shadows_sm => BoxShadow(
-    color: Color(0px).withOpacity(0.25),
+  static BoxShadow get shadow_sm => BoxShadow(
+    color: Color(rgba(0,0,0,0.1)).withOpacity(0.25),
     offset: Offset(0, 1),
-    blurRadius: 3,
+    blurRadius: 2,
     spreadRadius: 0,
   );
 
-  /// Creates a small shadow effect
-  /// - Color: -1px with opacity 0.25
-  /// - Offset: (0px, 4px)
-  /// - Blur: 6px
-  /// - Spread: 0px
-  static BoxShadow get light_shadows_md => BoxShadow(
-    color: Color(-1px).withOpacity(0.25),
+  // Medium Shadows
+  static BoxShadow get shadow_md => BoxShadow(
+    color: Color(rgba(0,0,0,0.15)).withOpacity(0.25),
     offset: Offset(0, 4),
     blurRadius: 6,
     spreadRadius: 0,
   );
 
+  // Large Shadows
+  static BoxShadow get shadow_lg => BoxShadow(
+    color: Color(rgba(0,0,0,0.2)).withOpacity(0.25),
+    offset: Offset(0, 10),
+    blurRadius: 15,
+    spreadRadius: 0,
+  );
+
 }
 
-// MARK: - Z-Indices
-class AppZIndices {
-  AppZIndices._();
+// MARK: - Opacities
+class AppOpacities {
+  AppOpacities._();
 
-  static const double light_zIndex_dropdown = 1000;
-  static const double light_zIndex_modal = 1050;
-  static const double light_zIndex_tooltip = 1100;
-}
-
-// MARK: - Transitions
-class AppTransitions {
-  AppTransitions._();
-
-  static const Duration light_transitions_fast = Duration(milliseconds: 150);
-  static const Duration light_transitions_normal = Duration(milliseconds: 200);
-  static const Duration light_transitions_slow = Duration(milliseconds: 300);
+  static const double opacity_disabled = 0.38;
+  static const double opacity_hover = 0.08;
+  static const double opacity_focus = 0.12;
 }
 
 // MARK: - Other Tokens
 class AppOtherTokens {
   AppOtherTokens._();
 
-  static const String light_icons_sm = "16";
-  static const String light_icons_md = "20";
-  static const String light_icons_lg = "24";
+  static const String $schema = "https://example.com/dark-mode-tokens.schema.json";
 }
 
 
